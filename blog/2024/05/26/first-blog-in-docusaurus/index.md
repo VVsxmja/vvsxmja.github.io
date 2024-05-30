@@ -32,13 +32,13 @@ VitePress 的可定制性太强了！强的原因是 VitePress 本身的功能�
 
 后来放弃 VitePress 的原因有两个，一个是 VitePress 的文档太弱了，另一个是 VitePress 和 Vite 强绑定，但是 Vite 太难懂了（而且文档也比较弱）。为了把我的自定义主题导出成 npm 包，费了九牛二虎之力都没有成功，最后只好作罢。
 
-> 其实我大概知道问题在哪：因为我用了 [UnoCSS](https://unocss.dev/) 的 [Vite 集成](https://unocss.dev/integrations/vite)，所以除了用 npm 包分发代码之外，用户还需要额外进行 [VitePress 的 Vite 配置](https://vitepress.dev/reference/site-config#vite)，但我自己用新的环境尝试了几次，遇到了各种难以描述的奇怪的错误……失败了几次之后彻底失去耐心了.
+> 其实我大概知道问题在哪：因为我用了 [UnoCSS](https://unocss.dev/) 的 [Vite 集成](https://unocss.dev/integrations/vite)，所以除了用 npm 包分发代码之外，用户还需要额外进行 [VitePress 的 Vite 配置](https://vitepress.dev/reference/site-config#vite)，但我自己用新的环境尝试了几次，遇到了各种难以描述的奇怪的错误……总之失败了几次之后彻底失去耐心了.
 
 我很热衷于自己造轮子，事实上造这个 VitePress 主题的过程中我已经造出了一个博客框架大部分必要的组成部分了。但是碰到奇怪的问题又找不到文档时，那种挫败感真的令人难受。
 
 # 图标是一个小恐龙的静态站点框架
 
-放弃 VitePress 之后决定寻找一个新的框架，网上冲浪了一段时间之后发现了 [Docusaurus](https://docusaurus.io/) 这个好东西。基于 React ，文档非常详细（Docusaurus 的官网本身就是使用 Docusaurus 写的文档博客二合一网站），有[开箱即用的博客框架](https://docusaurus.io/docs/blog)，并且也支持自定义，而且[这个自定义的方式还很神奇](https://docusaurus.io/docs/swizzling)……总之被圈粉了。
+放弃 VitePress 之后决定寻找一个新的框架，网上冲浪了一段时间之后发现了 [Docusaurus](https://docusaurus.io/) 这个好东西。基于 React ，文档非常详细（Docusaurus 的官网本身就是使用 Docusaurus 写的文档博客二合一网站），有[开箱即用的博客框架](https://docusaurus.io/docs/blog)，并且也支持定制化，而且[这个定制的方式还很神奇](https://docusaurus.io/docs/swizzling)……总之被圈粉了。
 
 这个小恐龙的图标真的很魔性，越看越喜欢。
 
