@@ -4,7 +4,6 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "VVsxmja's Blog",
-  tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
 
   url: "https://vvsxmja.github.io/",
