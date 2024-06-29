@@ -6,8 +6,8 @@ const config: Config = {
   title: "VVsxmja's Blog",
   favicon: "img/favicon.ico",
 
-  url: process.env.URL,
-  baseUrl: process.env.BASE_URL,
+  url: process.env.URL ?? "http://localhost",
+  baseUrl: process.env.BASE_URL ?? "/",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
