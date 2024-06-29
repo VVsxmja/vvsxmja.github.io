@@ -22,7 +22,7 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Test build website
-        run: bun run build
+        run: bun run --env-file env/github_actions.env build
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3

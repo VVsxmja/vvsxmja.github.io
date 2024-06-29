@@ -6,11 +6,8 @@ const config: Config = {
   title: "VVsxmja's Blog",
   favicon: "img/favicon.ico",
 
-  url: "https://vvsxmja.github.io/",
-  baseUrl: "/blog/",
-
-  organizationName: "VVsxmja",
-  projectName: "blog",
+  url: process.env.URL,
+  baseUrl: process.env.BASE_URL,
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
