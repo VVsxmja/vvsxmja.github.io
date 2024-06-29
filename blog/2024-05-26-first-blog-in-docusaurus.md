@@ -6,7 +6,7 @@ authors:
 
 这个框架的名字好难背呀……但是小恐龙的图标很可爱。
 
-![Docusaurus Introducing](/img/slash-introducing.svg)
+![Docusaurus Introducing](/blog/2024-05-26-first-blog-in-docusaurus/slash-introducing.svg)
 
 <!-- truncate -->
 
@@ -42,9 +42,9 @@ VitePress 的可定制性太强了！强的原因是 VitePress 本身的功能�
 
 这个小恐龙的图标真的很魔性，越看越喜欢。
 
-![Docusaurus](/img/docusaurus.svg)
-![Docusaurus Keytar](/img/docusaurus_keytar.svg)
-![Docusaurus Speed](/img/docusaurus_speed.svg)
+![Docusaurus](/blog/2024-05-26-first-blog-in-docusaurus/docusaurus.svg)
+![Docusaurus Keytar](/blog/2024-05-26-first-blog-in-docusaurus/docusaurus_keytar.svg)
+![Docusaurus Speed](/blog/2024-05-26-first-blog-in-docusaurus/docusaurus_speed.svg)
 
 简单上手了一下，使用体验非常好：文档很丰富，甚至[连 Frontmatter 都有文档](https://docusaurus.io/docs/markdown-features#front-matter)。
 
