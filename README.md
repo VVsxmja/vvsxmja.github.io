@@ -1,5 +1,3 @@
 # VVsxmja's Blog
 
-想到啥就写啥
-
-GitHub Pages 暂时还没搞555
+[地址](https://vvsxmja.github.io/).想到啥就写啥……
