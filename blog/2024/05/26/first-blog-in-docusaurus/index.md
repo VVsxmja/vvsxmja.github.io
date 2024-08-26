@@ -20,7 +20,7 @@ authors:
 
 后来用了一段时间的 [VitePress](https://vitepress.dev/) ，当时以为自己找到了**命中注定的那个框架**：基于 Vue 和 Vite ，极高的可定制性；框架本身也并不复杂，代码不多，很快就能看完。我甚至写了[一个 VitePress 的主题](https://github.com/VVsxmja/vitepress-theme-blog-pure)。
 
-# VitePress 之旅
+## VitePress 之旅
 
 VitePress 的可定制性太强了！强的原因是 VitePress 本身的功能并不多。
 
@@ -36,7 +36,7 @@ VitePress 的可定制性太强了！强的原因是 VitePress 本身的功能�
 
 我很热衷于自己造轮子，事实上造这个 VitePress 主题的过程中我已经造出了一个博客框架大部分必要的组成部分了。但是碰到奇怪的问题又找不到文档时，那种挫败感真的令人难受。
 
-# 图标是一个小恐龙的静态站点框架
+## 图标是一个小恐龙的静态站点框架
 
 放弃 VitePress 之后决定寻找一个新的框架，网上冲浪了一段时间之后发现了 [Docusaurus](https://docusaurus.io/) 这个好东西。基于 React ，文档非常详细（Docusaurus 的官网本身就是使用 Docusaurus 写的文档博客二合一网站），有[开箱即用的博客框架](https://docusaurus.io/docs/blog)，并且也支持定制化，而且[这个定制的方式还很神奇](https://docusaurus.io/docs/swizzling)……总之被圈粉了。
 
