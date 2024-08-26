@@ -33,7 +33,7 @@ Time to say goodbye to `htop` and `dstat` .
 
 答案是有的，请看 [Netdata](https://www.netdata.cloud/) 。
 
-# 如果您没有听说过 Netdata
+## 如果您没有听说过 Netdata
 
 [Netdata](https://www.netdata.cloud/) 是一款很强大的[开源](https://github.com/netdata/netdata)监控工具。它开箱即用，除了具备 `dstat` 的各种能力之外，还提供了非常友好的 Web Dashboard ，**对于每一项指标都有很详细的描述**，就算是第一次接触的用户，也能快速上手。
 
@@ -62,7 +62,7 @@ Netdata 除了自身具有观测系统指标的能力之外，同时也支持接
 
 （如果您还是 Get 不到 Netdata 好用在哪里，您也可以跟随下面的指引，一键启动一个 Netdata 来玩一玩，看看它是不是您的菜）
 
-# 使用 Docker 启动 Netdata 实例
+## 使用 Docker 启动 Netdata 实例
 
 以下内容基于 [Netdata 官方文档](https://learn.netdata.cloud/docs/netdata-agent/installation/docker)编写。
 
@@ -165,7 +165,7 @@ Host dev
     ServerAliveCountMax 240
 ```
 
-# 结语
+## 结语
 
 Netdata 提供了开箱即用的使用体验，详细、实时的系统指标，以及友好的 Web Dashboard ，值得大家进行尝试。
 
