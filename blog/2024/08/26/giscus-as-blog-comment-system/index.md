@@ -63,7 +63,7 @@ import Giscus from '@giscus/react';
 
 const GiscusContainer = (
   <Giscus
-    {/* ... */}
+    {/* ...... */}
     mapping="url"
     theme={/* light or dark_dimmed */}
   />
@@ -112,12 +112,16 @@ Docusaurus 默认主题提供了一个 Internal API 叫做 `useBlogPost()` ，�
 我们通过这个 API 来拿到当前页面所属的类别，并在此基础上控制 Giscus 的显示：
 
 ```tsx
-// other imports...
+// other imports......
 import { useBlogPost } from '@docusaurus/plugin-content-blog/client';
 
 export default function BlogPostItemWrapper(props: Props): JSX.Element {
   const { isBlogPostPage } = useBlogPost();
-  // ...
+  const GiscusContainer = (
+    <Giscus
+      {/* ...... */}
+    />
+  );
   return (
     <>
       <BlogPostItem {...props} />
@@ -143,7 +147,7 @@ Docusaurus 提供了 `useColorMode()` 来获取当前读者选择的颜色模式
 我们先定义好 Docusaurus ColorMode和 Giscus Theme 之间的映射，再通过这个 API 来拿到当前读者选择的 ColorMode ，并让 Giscus 使用与之对应 Theme ：
 
 ```tsx
-// other imports...
+// other imports......
 import { useColorMode, ColorMode } from '@docusaurus/theme-common';
 import Giscus, { Theme } from '@giscus/react';
 
@@ -153,19 +157,19 @@ const DocusaurusColorModeToGiscusTheme: Record<ColorMode, Theme> = {
 };
 
 export default function BlogPostItemWrapper(props: Props): JSX.Element {
-  // ...
+  // ......
   
   const { colorMode } = useColorMode();
   const giscusTheme = DocusaurusColorModeToGiscusTheme[colorMode];
 
   const GiscusContainer = (
     <Giscus
-      {/* ... */}
+      {/* ...... */}
       theme={giscusTheme}
     />
   );
 
-  // ...
+  // ......
 }
 ```
 
