@@ -97,22 +97,23 @@ src
 
 打开 `src/theme/BlogPostItem/index.tsx` ，在 `BlogPostItem` 之后添加我们的 Giscus React 组件，打开我们的 Docusaurus 本地预览，我们就能看到博文下方的评论区啦！
 
-然而预览之后会发现，博文下方确实出现了评论区，但是首页（博文目录）的每一个摘要下方也出现了评论区……🤡
+然而预览之后会发现，博文下方确实出现了评论区，但是首页（博文目录）的每一个摘要下方也出现了评论区…… 🤡
 
 ### 限制 Giscus 只在具体博文下方显示
 
-Docusaurus 默认主题提供了一个 API 叫做 `useBlogPost()` ，可以用来查询当前页面属于博文目录还是具体的博文页面。
+Docusaurus 默认主题提供了一个 Internal API 叫做 `useBlogPost()` ，可以用来查询当前页面属于博文目录还是具体的博文页面。
 
-这是个 Undocumented Internal API ，根本没有文档🤡，我在 Docusaurus 的 GitHub Repo 里面搜罗了一圈才找到相关的内容：
+因为是 Internal API ，所以文档里面没有关于这个 API 的描述 🤡 ，我在 Docusaurus 的 GitHub Repo 里面搜罗了一圈才找到相关的内容：
 
 - https://github.com/facebook/docusaurus/discussions/8140
 - https://github.com/facebook/docusaurus/pull/8088/files
+- https://github.com/facebook/docusaurus/pull/10316
 
 我们通过这个 API 来拿到当前页面所属的类别，并在此基础上控制 Giscus 的显示：
 
 ```tsx
 // other imports...
-import { useBlogPost } from '@docusaurus/theme-common/internal';
+import { useBlogPost } from '@docusaurus/plugin-content-blog/client';
 
 export default function BlogPostItemWrapper(props: Props): JSX.Element {
   const { isBlogPostPage } = useBlogPost();
