@@ -47,6 +47,14 @@ const config: Config = {
         alt: "Logo",
         src: "img/logo.svg",
       },
+      items: [
+        {
+          href: "https://github.com/VVsxmja/vvsxmja.github.io",
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+        }
+      ]
     },
     prism: {
       theme: prismThemes.github,
