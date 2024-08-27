@@ -1,6 +1,6 @@
 import React from 'react';
 import BlogPostItem from '@theme-original/BlogPostItem';
-import { useBlogPost } from '@docusaurus/theme-common/internal';
+import { useBlogPost } from '@docusaurus/plugin-content-blog/client';
 import type BlogPostItemType from '@theme/BlogPostItem';
 import type { WrapperProps } from '@docusaurus/types';
 import { useColorMode, ColorMode } from '@docusaurus/theme-common';
@@ -15,7 +15,7 @@ type Props = WrapperProps<typeof BlogPostItemType>;
 
 export default function BlogPostItemWrapper(props: Props): JSX.Element {
   const { isBlogPostPage } = useBlogPost();
-  
+
   const { colorMode } = useColorMode();
   const giscusTheme = DocusaurusColorModeToGiscusTheme[colorMode];
 
