@@ -74,7 +74,7 @@ const GiscusContainer = (
 
 Docusaurus 提供了两种魔改的方式：Ejecting 和 Wrapping 。简单来说就是：
 
-- Ejecting ：将 Docusaurus 某个组件的代码复制一份，开发者在其上进行修改。这是真正的魔改，自由度最高，但缺点是大量的组件代码被复制出来，会造成代码仓库提体积的膨胀。
+- Ejecting ：将 Docusaurus 某个组件的代码复制一份，开发者在其上进行修改。这是真正的魔改，自由度最高，但缺点是大量的组件代码被复制出来，会造成代码仓库体积的膨胀。
 - Wrapping ：在 Docusaurus 某个组件的外层创建一个 Wrapper ，比较优雅。大部分时候 Wrapping 就够用了。
 
 这里，我们希望在博客页面的下方添加我们的评论区组件，所以我们可以 Wrap 展示「博客内容」的组件，在博客内容的下方加上 Giscus 的代码。
@@ -179,10 +179,10 @@ export default function BlogPostItemWrapper(props: Props): JSX.Element {
 
 这个方法是我写这篇文章的时候脑补出来的，还没实现过，留作习题供读者尝试（doge）。
 
-简单来说就是 Giscus 的主题可以是自定义的 CSS 。而我们知道在 CSS 中实现日夜切换的常规操作是通过 CSS 变量，让组件在不同模式下继承得到不同的前景色和背景色。
+简单来说就是 Giscus 的主题可以是自定义的 CSS 。而我们知道在 CSS 中实现日夜切换的常规操作是通过 CSS 变量，让组件在不同模式下继承不同的变量得到不同的前景色和背景色。
 
 那么这里理论上更优雅的实现方式，是我们为 Giscus 编写一套 Docusaurus Theme ，将 Giscus 所有颜色交由 Docusaurus 管理，这样可以让 Giscus 和 Docusaurus 更加融合统一。
 
 ## 结语
 
-我们使用 Docusaurus Swizzling 将 Giscus 嵌入了 Docusaurus 中，并添加了日夜颜色切换的功能，接下来就可以通过这个评论区愉快地和小伙伴们聊天啦！
+我们使用 Docusaurus Swizzling 将 Giscus 嵌入了 Docusaurus 中，并添加了日夜颜色切换的功能，接下来就可以通过这个评论区愉快地和小伙伴们聊天啦！（现实是根本没有小伙伴 QAQ）
