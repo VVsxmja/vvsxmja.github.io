@@ -16,13 +16,13 @@ authors:
 
 如果能做到纯客户端实现，只在用户侧调用 GitHub API 来实现所有功能，就更好了。可惜 Giscus 仍然需要在第三方 Host 一个服务来做这件事，但是算了，无所谓。
 
-## 如果您没有听说过 Giscus
+## 如果你没有听说过 Giscus
 
 [Giscus](https://github.com/giscus/giscus) 是一个基于 GitHub Discussion 的评论系统。而 [`giscus.app`](https://giscus.app/) 是 Giscus 的文档兼脚本生成器。
 
 跟随 [`giscus.app`](https://giscus.app/) 上的指引，我们最终会得到一个 HTML 元素，将这个元素插入到网页源代码中，Giscus 就出现啦。
 
-如果您不喜欢直接写 HTML 元素，或者正在使用某个前端框架，您也可以使用 [Giscus Component](https://github.com/giscus/giscus-component) 。比如您现在正在看的这个博客使用的框架是 [Docusaurus](https://docusaurus.io/) ，而这个框架是基于 [React](https://react.dev/) 的，所以我使用了 [`@giscus/react`](https://github.com/giscus/giscus-component/tree/main/react) 。
+如果你不喜欢直接写 HTML 元素，或者正在使用某个前端框架，你也可以使用 [Giscus Component](https://github.com/giscus/giscus-component) 。比如你现在正在看的这个博客使用的框架是 [Docusaurus](https://docusaurus.io/) ，而这个框架是基于 [React](https://react.dev/) 的，所以我使用了 [`@giscus/react`](https://github.com/giscus/giscus-component/tree/main/react) 。
 
 所以我们总共需要做三件事：
 
@@ -66,7 +66,7 @@ const GiscusContainer = (
 );
 ```
 
-接下来要做的事情就是将这个组件插入到 Docusaurus 中。如果您也在使用 Docusaurus ，并且对于魔改 Docusaurus 组件的方法并不熟悉，您可以参考 [Docusaurus 官方魔改教程](https://docusaurus.io/docs/swizzling)。
+接下来要做的事情就是将这个组件插入到 Docusaurus 中。如果你也在使用 Docusaurus ，并且对于魔改 Docusaurus 组件的方法并不熟悉，你可以参考 [Docusaurus 官方魔改教程](https://docusaurus.io/docs/swizzling)。
 
 Docusaurus 提供了两种魔改的方式：Ejecting 和 Wrapping 。简单来说就是：
 

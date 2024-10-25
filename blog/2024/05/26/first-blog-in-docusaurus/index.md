@@ -48,4 +48,4 @@ VitePress 的可定制性太强了！强的原因是 VitePress 本身的功能�
 
 简单上手了一下，使用体验非常好：文档很丰富，甚至[连 Frontmatter 都有文档](https://docusaurus.io/docs/markdown-features#front-matter)。
 
-大悦，遂撰文记之。于是就有了您现在正在看的这篇文章以及这个网站。
+大悦，遂撰文记之。于是就有了你现在正在看的这篇文章以及这个网站。
