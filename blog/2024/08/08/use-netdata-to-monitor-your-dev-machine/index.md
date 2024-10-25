@@ -4,9 +4,9 @@ authors:
   - me
 ---
 
-Time to say goodbye to `htop` and `dstat` .
+Netdata 本来是对标 Prometheus 的监控方案，但日常开发中我们也可以用 Netdata 替代 `htop` 和 `dstat` ，除了具备二者几乎所有能力之外，还提供图形化界面，支持回放，并且开箱即用、易于上手。
 
-{/* truncate */}
+<!-- truncate -->
 
 ---
 
@@ -41,7 +41,7 @@ Time to say goodbye to `htop` and `dstat` .
 
 例如默认配置下，Overview 中第一个 Metric - CPU 利用率的图表上方，就有如下的介绍：
 
-> Total CPU utilization (all cores). 
+> Total CPU utilization (all cores).
 >
 > 100% here means there is no CPU idle time at all. You can get per core usage at the CPUs section and per application usage at the Applications Monitoring section.
 >
@@ -54,7 +54,7 @@ Netdata 就像是**生怕用户看不懂这些 Metrics** 一样，在每一个�
 百闻不如一见，Netdata 官方在世界各地都布了 Netdata Demo ，大伙可以直接点进去看看 Netdata 长什么样。
 
 | [FRANKFURT](https://frankfurt.netdata.rocks) | [NEWYORK](https://newyork.netdata.rocks) | [ATLANTA](https://atlanta.netdata.rocks) | [SANFRANCISCO](https://sanfrancisco.netdata.rocks) | [TORONTO](https://toronto.netdata.rocks) | [SINGAPORE](https://singapore.netdata.rocks) | [BANGALORE](https://bangalore.netdata.rocks) |
-| --- | --- | --- | --- | --- | --- | --- |
+| -------------------------------------------- | ---------------------------------------- | ---------------------------------------- | -------------------------------------------------- | ---------------------------------------- | -------------------------------------------- | -------------------------------------------- |
 
 Netdata 除了自身具有观测系统指标的能力之外，同时也支持接入其他应用（例如 OpenMetrics 和 StatsD）以拓展它的能力。比如，安装了[这个插件](https://github.com/netdata/netdata/tree/master/src/collectors/systemd-journal.plugin)，你就可以在 Netdata 中查看 `systemd` 的 Journal Logs 了！
 
@@ -141,6 +141,8 @@ volumes:
 这里的配置是最简单的开箱即用配置，关于更高级的配置，以及除了 Docker 以外的部署方法，请参考[官方文档](https://learn.netdata.cloud/docs/netdata-agent/installation)。
 
 Netdata 会在 `19999` 端口跑一个 Web Dashboard ，结合 `--network=host` ，也就是跑在 Host 的 `19999` 端口上。
+
+## 通过 SSH Port Forwarding 访问开发机上的 Web Dashboard
 
 我们可以通过 SSH Tunnel 等方式，将这个端口转发到我们访问开发机的电脑上，然后就可以用浏览器访问啦！
 
