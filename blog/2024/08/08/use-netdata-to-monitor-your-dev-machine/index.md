@@ -15,7 +15,7 @@ Time to say goodbye to `htop` and `dstat` .
 - 我跑的某个工具卡住了，但我不知道它是在计算，还是在进行网络传输，还是挂了。
 - 我的某个程序跑的很慢，但我不知道它 Bound 在 IO 还是 CPU 还是别的地方。
 
-如果您之前只接触过 Windows 系统，那么这时您应该会下意识地寻找「任务管理器」这种东西。您可能会找到 `htop` ，或者（如果您正在使用图形界面）某个桌面环境的任务管理器。
+如果你之前只接触过 Windows 系统，那么这时你应该会下意识地寻找「任务管理器」这种东西。你可能会找到 `htop` ，或者（如果你正在使用图形界面）某个桌面环境的任务管理器。
 
 这些程序提供了最基本的系统指标，例如 CPU 利用率、内存利用率等。但当我们遇到一些比较复杂/玄学的问题时，我们可能会想：如果能看到更详细的系统指标（比如 CPU 中断发生的频率），说不定能找到什么解决问题的线索。
 
@@ -33,7 +33,7 @@ Time to say goodbye to `htop` and `dstat` .
 
 答案是有的，请看 [Netdata](https://www.netdata.cloud/) 。
 
-## 如果您没有听说过 Netdata
+## 如果你没有听说过 Netdata
 
 [Netdata](https://www.netdata.cloud/) 是一款很强大的[开源](https://github.com/netdata/netdata)监控工具。它开箱即用，除了具备 `dstat` 的各种能力之外，还提供了非常友好的 Web Dashboard ，**对于每一项指标都有很详细的描述**，就算是第一次接触的用户，也能快速上手。
 
@@ -56,11 +56,11 @@ Netdata 就像是**生怕用户看不懂这些 Metrics** 一样，在每一个�
 | [FRANKFURT](https://frankfurt.netdata.rocks) | [NEWYORK](https://newyork.netdata.rocks) | [ATLANTA](https://atlanta.netdata.rocks) | [SANFRANCISCO](https://sanfrancisco.netdata.rocks) | [TORONTO](https://toronto.netdata.rocks) | [SINGAPORE](https://singapore.netdata.rocks) | [BANGALORE](https://bangalore.netdata.rocks) |
 | --- | --- | --- | --- | --- | --- | --- |
 
-Netdata 除了自身具有观测系统指标的能力之外，同时也支持接入其他应用（例如 OpenMetrics 和 StatsD）以拓展它的能力。比如，安装了[这个插件](https://github.com/netdata/netdata/tree/master/src/collectors/systemd-journal.plugin)，您就可以在 Netdata 中查看 `systemd` 的 Journal Logs 了！
+Netdata 除了自身具有观测系统指标的能力之外，同时也支持接入其他应用（例如 OpenMetrics 和 StatsD）以拓展它的能力。比如，安装了[这个插件](https://github.com/netdata/netdata/tree/master/src/collectors/systemd-journal.plugin)，你就可以在 Netdata 中查看 `systemd` 的 Journal Logs 了！
 
-相信您此时已经按耐不住自己的心情，想要自己部署一套 Netdata 实例了！
+相信你此时已经按耐不住自己的心情，想要自己部署一套 Netdata 实例了！
 
-（如果您还是 Get 不到 Netdata 好用在哪里，您也可以跟随下面的指引，一键启动一个 Netdata 来玩一玩，看看它是不是您的菜）
+（如果你还是 Get 不到 Netdata 好用在哪里，你也可以跟随下面的指引，一键启动一个 Netdata 来玩一玩，看看它是不是你的菜）
 
 ## 使用 Docker 启动 Netdata 实例
 
@@ -68,7 +68,7 @@ Netdata 除了自身具有观测系统指标的能力之外，同时也支持接
 
 Netdata 推荐的安装/部署方式是通过容器启动的。只需要一条命令 / 一个配置文件就能快速部署 Netdata ：
 
-（当然在此之前，您需要确认您的网络条件可以让 Docker Engine 访问到 DockerHub ）
+（当然在此之前，你需要确认你的网络条件可以让 Docker Engine 访问到 DockerHub ）
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -171,4 +171,4 @@ Netdata 提供了开箱即用的使用体验，详细、实时的系统指标，
 
 在具体的开发场景下，结合 Port Forwarding ，可以很方便地随时查看开发机的各项指标。
 
-希望这篇文章有帮到您。
+希望这篇文章有帮到你。
