@@ -10,15 +10,11 @@ authors:
 
 ---
 
-## 选择 Giscus 的原因
+既然我的博客搭建在 GitHub 上，我希望它的评论系统尽量不要引入 GitHub 之外的第三方。
 
-其实没啥可选的……
+选择 Giscus 的原因是 Giscus 以 GitHub Discussion 作为唯一数据源，而且评论者身份和 GitHub 账号绑定，不像其他评论系统可能需要另外部署数据库或者使用第三方 Auth 。
 
-- 我希望这个评论插件可以基于 GitHub 来做，因为懒得在 GitHub 之外再弄一套管理评论的东西了。
-- 基于 GitHub 的评论插件，（基本上）要么是通过 Issues ，要么是通过 Discussions 。
-- 我更倾向于用 Discussions 来做评论区，Issues 用来做别的事。
-- 使用 Discussions 的评论插件，几乎只有 Giscus 。
-  - 我 Google 了 `github discussion comment system -giscus` ，搜索结果里面都是乱七八糟的东西，找不到第二个像 Giscus 一样的插件。
+如果能做到纯客户端实现，只在用户侧调用 GitHub API 来实现所有功能，就更好了。可惜 Giscus 仍然需要在第三方 Host 一个服务来做这件事，但是算了，无所谓。
 
 ## 如果您没有听说过 Giscus
 
