@@ -4,13 +4,17 @@ authors:
   - me
 ---
 
-从 GitHub 中来，到 GitHub 中去。
+使用 Giscus 为你在 GitHub 上的博客添加一个评论区，同时尽量少地引入 GitHub 以外的第三方。
 
-{/* truncate */}
+顺便介绍了通过 Docusaurus 的 API ，在切换博客的亮/暗模式时，同步切换 Giscus 主题的方式。
+
+<!-- truncate -->
 
 ---
 
-既然我的博客搭建在 GitHub 上，我希望它的评论系统尽量不要引入 GitHub 之外的第三方。
+我想给我的博客增加一个评论区了。
+
+既然我的博客文章全部存储 GitHub 上，我希望它的评论系统也能尽量基于 GitHub ，尽量不要引入 GitHub 之外的第三方。
 
 选择 Giscus 的原因是 Giscus 以 GitHub Discussion 作为唯一数据源，而且评论者身份和 GitHub 账号绑定，不像其他评论系统可能需要另外部署数据库或者使用第三方 Auth 。
 
@@ -154,7 +158,7 @@ const DocusaurusColorModeToGiscusTheme: Record<ColorMode, Theme> = {
 
 export default function BlogPostItemWrapper(props: Props): JSX.Element {
   // ......
-  
+
   const { colorMode } = useColorMode();
   const giscusTheme = DocusaurusColorModeToGiscusTheme[colorMode];
 

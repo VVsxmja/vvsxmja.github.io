@@ -4,7 +4,7 @@ authors:
   - me
 ---
 
-这个框架的名字好难背呀……但是小恐龙的图标很可爱。
+Docusaurus 是一个基于 React 的静态站点框架，在开箱即用的同时，提供了优雅的魔改方法。
 
 ![Docusaurus Introducing](./slash-introducing.svg)
 
